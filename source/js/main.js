@@ -1,4 +1,5 @@
 import './vendor';
+import baguetteBox from './modules/baguettebox.js';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -195,6 +196,8 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  baguetteBox.run('.routs-item__img-wrapper');
 
   // DOMContentLoaded
 });

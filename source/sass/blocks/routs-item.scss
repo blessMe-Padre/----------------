@@ -1,0 +1,20 @@
+.routs-item {
+  padding: 100px 0;
+
+  @include vp-767 {
+    padding: 30px 0;
+  }
+}
+
+.routs-item__img-wrapper {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 30px;
+}
+
+.routs-item__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
