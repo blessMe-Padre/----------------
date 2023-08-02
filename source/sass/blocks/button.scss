@@ -1,0 +1,21 @@
+.button {
+  display: block;
+  border: none;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-tangaroa;
+  padding: 10px 14px;
+  cursor: pointer;
+  background-color: $color-alice-blue;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+}
+
+.button:focus,
+.button:hover {
+  color: $color-default-white;
+  background-color: $color-glacier;
+}

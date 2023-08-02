@@ -1,0 +1,59 @@
+
+.nav-toggle {
+  display: none;
+  z-index: 9999;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include vp-767 {
+    display: block;
+  }
+
+  &--closed {
+    height: 24px;
+    width: 24px;
+    border: none;
+    padding: 0;
+  }
+
+  &--closed::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $color-default-white;
+    box-shadow: 0 7px 0 0 $color-default-white, 0 14px 0 0 $color-default-white;
+  }
+}
+
+.nav-toggle--opened {
+  top: 0;
+  right: -12px;
+  height: 30px;
+  width: 30px;
+  border: none;
+}
+
+.nav-toggle--opened::after,
+.nav-toggle--opened::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 20px;
+  width: 2px;
+  background-color: $color-tangaroa;
+}
+
+.nav-toggle--opened::after {
+  transform: rotate(45deg);
+}
+
+.nav-toggle--opened::before {
+  transform: rotate(-45deg);
+}

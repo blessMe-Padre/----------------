@@ -1,0 +1,125 @@
+.contact__wrapper {
+  padding: 116px 0;
+  display: flex;
+
+  @include vp-1023 {
+    padding-bottom: 77px;
+  }
+
+  @include vp-767 {
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 52px;
+  }
+}
+
+.contact__map {
+  flex: 1 0 50%;
+  max-width: 560px;
+  background-image: url("../img/content/map-bg.jpg");
+
+  @include vp-767 {
+    order: 2;
+  }
+}
+
+.contact__map iframe {
+  width: 560px;
+  height: 306px;
+  border: none;
+
+  @include vp-1023 {
+    width: 324px;
+    height: 335px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 316px;
+  }
+}
+
+.contact__text {
+  padding-top: 60px;
+  padding-left: 99px;
+  margin-bottom: 33px;
+
+  @include vp-1023 {
+    padding-top: 32px;
+    padding-left: 15px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-left: 0;
+  }
+}
+
+.contact__text p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-tangaroa;
+  margin-bottom: 33px;
+
+  @include vp-1023 {
+    margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 27px;
+  }
+}
+
+.contact__text address {
+  display: flex;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 21px;
+
+  @include vp-1023 {
+    margin-bottom: 18px;
+  }
+}
+
+.contact__text-addres svg {
+  @include vp-767 {
+    width: 28px;
+    height: 30px;
+  }
+}
+
+.contact__text svg {
+  margin-right: 10px;
+
+  @include vp-1023 {
+    width: 25px;
+    height: 22px;
+  }
+}
+
+.contact__map-link {
+  display: block;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-tangaroa;
+  margin-bottom: 10px;
+}
+
+.contact__map-link svg {
+  margin-bottom: -3px;
+  margin-right: 7px;
+
+  @include vp-1023 {
+    width: 18px;
+    height: 22px;
+    margin-bottom: -3px;
+    margin-right: 7px;
+  }
+}
+
+.contact__map-link:hover {
+  color: $color-tangaroa-alfa;
+}
