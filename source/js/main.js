@@ -112,4 +112,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
     });
   }
+
+  if (document.querySelector('.routes__slider')) {
+    new Swiper('.routes__slider', {
+      slidesPerView: 3,
+      loop: true,
+      spaceBetween: 30,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+      },
+
+    });
+  }
+
+  // DOMContentLoaded
 });

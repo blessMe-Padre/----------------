@@ -2121,6 +2121,70 @@ button,
   opacity: 1;
 }
 
+.routes {
+  padding: 100px 0;
+  position: relative;
+}
+
+.routes .swiper-pagination {
+  bottom: 30px;
+}
+
+.routes .swiper-pagination-bullet {
+  background-color: #759CDC;
+}
+
+.routes .swiper-pagination-bullet-active {
+  background-color: #1A3B70;
+}
+
+.routes__slider {
+  overflow: hidden;
+}
+
+.routes__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+  grid-template-columns: 60% 40%;
+  min-height: 300px;
+  margin-left: 1px;
+}
+
+.routes__item-description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 0 20px 20px;
+  border-top: 1px solid #1A3B70;
+  border-left: 1px solid #1A3B70;
+  border-bottom: 1px solid #1A3B70;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-right: 15px;
+}
+
+.routes__item-description p {
+  color: var(--divider, #8592B5);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0 0 15px 0;
+}
+
+.routes__item-description h3 {
+  margin: 0 0 20px 0;
+}
+
+.routes__item-picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 @media (max-width: 1439px) {
   .container {
     padding: 0 40px;
@@ -2418,5 +2482,13 @@ button,
   .yacht__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .routes {
+    padding: 30px 0 50px;
+  }
+
+  .routes .swiper-pagination {
+    bottom: 20px;
   }
 }
