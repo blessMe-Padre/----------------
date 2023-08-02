@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/swiper";
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -20,4 +21,7 @@
 @import "blocks/checkbox";
 @import "blocks/contact";
 @import "blocks/nav-footer";
+@import "blocks/hero";
+@import "blocks/title";
+@import "blocks/yacht";
 // ---------------------------------

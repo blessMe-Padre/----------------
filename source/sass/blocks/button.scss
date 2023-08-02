@@ -1,17 +1,28 @@
 .button {
-  display: block;
+  display: inline-block;
   border: none;
   text-align: center;
-  width: 100%;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  color: $color-tangaroa;
-  padding: 10px 14px;
+  color: $color-default-white;
+  padding: 10px 70px 10px 15px;
   cursor: pointer;
-  background-color: $color-alice-blue;
+  background-color: $color-tangaroa;
   transition: all 0.3s ease-in-out;
   user-select: none;
+  border-radius: 10px;
+  position: relative;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  width: 32px;
+  height: 15px;
+  background: url('../img/svg/arrow-right.svg');
 }
 
 .button:focus,

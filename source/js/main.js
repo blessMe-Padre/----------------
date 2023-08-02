@@ -1,3 +1,5 @@
+import './vendor';
+
 window.addEventListener('DOMContentLoaded', () => {
 
   const navToggle = document.querySelector('.nav-toggle');
@@ -90,4 +92,24 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
   getCheckStorage();
+
+  /* eslint-disable no-new */
+  /* eslint-disable no-undef */
+  // Swiper 7.4.1
+
+  if (document.querySelector('.yacht__slider')) {
+    new Swiper('.yacht__slider', {
+      observer: true,
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 34,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+    });
+  }
 });

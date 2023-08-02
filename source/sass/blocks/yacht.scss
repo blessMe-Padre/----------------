@@ -1,0 +1,116 @@
+.yacht {
+  padding: 100px 0;
+  background-color: $color-light-blue;
+  color: $color-default-white;
+
+  @include vp-767 {
+    padding: 30px 0;
+  }
+}
+
+.yacht__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  position: relative;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.yacht__wrapper::before {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: -30px;
+  width: 20%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid $color-default-white;
+  z-index: 1;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.yacht__picture {
+  position: relative;
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.yacht__picture img {
+  border-radius: 10px;
+  background-color: $color-glacier;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yacht__description-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+
+.yacht__description-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.yacht__description-item {
+  min-width: 140px;
+}
+
+.yacht__description-feature {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0 0 10px 0;
+}
+
+.yacht__description-value {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  opacity: 0.8;
+  margin: 0 0 10px 0;
+}
+
+.yacht__description-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: $color-light-blue-2;
+}
+
+.swiper-pagination-bullet {
+  background-color: $color-default-white;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-glacier;
+  opacity: 1;
+}

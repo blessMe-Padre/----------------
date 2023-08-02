@@ -80,3 +80,18 @@
   display: flex;
   flex-direction: column;
 }
+
+.nav__link-button {
+  color: $color-tangaroa;
+  background-color: $color-quartz;
+  text-align: center;
+  border-radius: 7px;
+  margin-top: 5px;
+  border: 1px solid $color-tangaroa;
+}
+
+.nav__link-button:hover {
+  color: $color-quartz;
+  background-color: $color-tangaroa;
+  border: 1px solid $color-quartz;
+}
