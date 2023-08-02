@@ -1993,7 +1993,7 @@ button,
 
 .title {
   color: #1A3B70;
-  font-size: calc(32px + 32 * ((100vw - 320px) / 1600));
+  font-size: calc(28px + 36 * ((100vw - 320px) / 1600));
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
@@ -2002,7 +2002,7 @@ button,
 }
 
 .title--h2 {
-  font-size: calc(32px + 16 * ((100vw - 320px) / 1600));
+  font-size: calc(28px + 20 * ((100vw - 320px) / 1600));
   margin: 0;
   margin-bottom: calc(30px + 30 * ((100vw - 320px) / 1600));
 }
@@ -2183,6 +2183,64 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 10px;
+  margin-right: 2px;
+}
+
+.services {
+  padding: 100px 0;
+  position: relative;
+}
+
+.services__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 31.5% 1fr;
+  grid-template-columns: 31.5% 1fr;
+  gap: 50px;
+}
+
+.services__table {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #759CDC;
+  color: #ffffff;
+}
+
+.services__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 15% 48%;
+  grid-template-columns: 30% 15% 48%;
+  gap: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 20px;
+}
+
+.services__row:first-child {
+  text-transform: uppercase;
+}
+
+.services__item p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.services__picture {
+  max-height: 600px;
+  position: relative;
+}
+
+.services__picture::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -25px;
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid #1A3B70;
+  z-index: -1;
 }
 
 @media (max-width: 1439px) {
@@ -2292,6 +2350,19 @@ button,
   }
 
   .yacht__wrapper::before {
+    display: none;
+  }
+
+  .services__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .services__picture {
+    display: none;
+  }
+
+  .services__picture::before {
     display: none;
   }
 }
@@ -2490,5 +2561,20 @@ button,
 
   .routes .swiper-pagination {
     bottom: 20px;
+  }
+
+  .services {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 519px) {
+  .services__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .services__row:first-child {
+    display: none;
   }
 }

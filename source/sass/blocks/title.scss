@@ -1,6 +1,6 @@
 .title {
   color: $color-tangaroa;
-  @include adaptiv-value("font-size", 64, 32, 0);
+  @include adaptiv-value("font-size", 64, 28, 0);
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
@@ -9,7 +9,7 @@
 }
 
 .title--h2 {
-  @include adaptiv-value("font-size", 48, 32, 0);
+  @include adaptiv-value("font-size", 48, 28, 0);
   margin: 0;
   @include adaptiv-value("margin-bottom", 60, 30, 0);
 }
