@@ -3,6 +3,7 @@
   min-height: 138px;
   display: flex;
   align-items: center;
+  padding: 30px 0;
 
   @include vp-1023 {
     min-height: 120px;
@@ -50,6 +51,8 @@
   margin: 0 0 0 40px;
   padding: 0;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   flex-wrap: wrap;
   max-width: 800px;
 
@@ -72,6 +75,7 @@
   color: $color-alice-blue;
   padding: 10px 0;
   margin-right: 32px;
+  transition: color 0.3s ease-in;
 
   @include vp-1023 {
     font-size: 12px;
@@ -124,4 +128,16 @@
 
 .nav-footer__social svg:hover {
   transform: scale(1.2);
+}
+
+.nav-footer__contact {
+  color: $color-default-white;
+}
+
+.nav-footer__contact p {
+  margin: 0 0 10px 0;
+}
+
+.nav-footer__contact a {
+  color: $color-default-white;
 }
